@@ -74,9 +74,7 @@ singularity run --app vncpasswd singularity-vncserver.simg
 Example:
 
 ```console
-$ echo "mypassword" \
-  | singularity run --app vncpasswd singularity-vncserver.simg -f \
-  > vnc_passwd
+$ echo "mypassword" | singularity run --app vncpasswd singularity-vncserver.simg -f > vnc_passwd
 Warning: password truncated to the length of 8.
 ```
 
@@ -110,8 +108,8 @@ WebSocket server settings:
 Then from your browser using the [noVNC] client, connect to the machine running
 the VNC server and port `8000`.
 
-It is recommended you either setup SSL for a secure connection or host it from
-behind a reverse proxy with SSL already enabled.
+**It is recommended you either setup SSL for a secure connection or host it
+from behind a reverse proxy with SSL already enabled.**
 
 ## Contributing
 
